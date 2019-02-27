@@ -1,0 +1,21 @@
+﻿@model Nop.Plugin.Administration.ImportManager.Models.RunImportModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+@inject Nop.Core.IWebHelper webHelper
+<form asp-controller="ImportManager" asp-action="RunImport" method="post">
+    <fieldset class="panel-group">
+        <label>Configuration</label>
+        <div class="form-group">
+            <div>Some description</div>
+            <div class="col-md-9">
+                <nop-editor asp-for="ImportUrl" />
+                <span asp-validation-for="ImportUrl">My</span>
+            </div>
+
+            <div class="col-md-9 col-md-offset-3">
+                <input type="submit" name="save" class="btn bg-primary" value="@T("Admin.Common.Save")" />
+            </div>
+        </div>
+    </fieldset>
+</form>

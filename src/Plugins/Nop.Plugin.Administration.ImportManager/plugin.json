@@ -1,0 +1,11 @@
+{
+  "Group": "Export-Import",
+  "FriendlyName": "Import manager",
+  "SystemName": "Administration.ImportManager",
+  "Version": "1.01",
+  "SupportedVersions": [ "4.10" ],
+  "Author": "Serhii Michkovskyi",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Administration.ImportManager.dll",
+  "Description": "This plugin allows import some sort of files"
+}
